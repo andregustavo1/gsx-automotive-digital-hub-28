@@ -1,12 +1,16 @@
 import { ArrowDown } from "lucide-react";
+import { useState } from "react";
 
 const Hero = () => {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const whatsappUrl = "https://wa.me/5544999057697";
 
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center bg-gsx-black overflow-hidden"
+      className={`relative min-h-screen flex items-center bg-gsx-black overflow-hidden ${
+        isVideoLoaded ? "opacity-100" : "opacity-0"
+      } transition-opacity duration-500`}
     >
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gsx-black/90 to-gsx-black/70 z-10"></div>
@@ -18,6 +22,7 @@ const Hero = () => {
         autoPlay 
         loop 
         muted 
+        onLoadedData={() => setIsVideoLoaded(true)}
       ></video>
       
       {/* Content */}
