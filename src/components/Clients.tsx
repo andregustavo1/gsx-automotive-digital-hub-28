@@ -85,8 +85,8 @@ const Clients = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious className="flex bg-black" />
+            <CarouselNext className="flex bg-black" />
           </Carousel>
         </div>
         

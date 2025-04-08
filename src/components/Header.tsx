@@ -48,7 +48,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/31659cb8-2ea5-4fb9-b29e-d8f489fb37a9.png" 
             alt="GSX Diagnósticos Logo" 
-            className="h-10 mr-3"
+            className="w-16 mr-3"
           />
         </a>
         
@@ -112,7 +112,7 @@ const Header = () => {
             rel="noopener noreferrer" 
             className="btn btn-primary text-sm py-2 px-4"
           >
-            Agendar
+            Agendar Diagnóstico
           </a>
         </nav>
       </div>

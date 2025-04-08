@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
@@ -10,16 +9,16 @@ const Hero = () => {
       className="relative min-h-screen flex items-center bg-gsx-black overflow-hidden"
     >
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gsx-black to-gsx-black/80 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-gsx-black/90 to-gsx-black/70 z-10"></div>
       
-      {/* Background image - using a placeholder that represents automotive diagnostic equipment */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1504222490429-cfcb0f13e424?q=80&w=1470&auto=format&fit=crop')",
-          filter: "brightness(0.4)"
-        }}
-      ></div>
+      {/* Background video */}
+      <video 
+        className="absolute inset-0 w-full h-full object-cover z-0" 
+        src="/img/IVSOQM_GT-Ferrari_Gamma_Copertina_Short_A6KHBL.mp4" 
+        autoPlay 
+        loop 
+        muted 
+      ></video>
       
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
