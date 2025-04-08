@@ -1,5 +1,12 @@
 
 import { useEffect, useRef } from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Clients = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -34,6 +41,17 @@ const Clients = () => {
     };
   }, []);
 
+  const images = [
+    "/lovable-uploads/453e976d-3e54-4127-b161-abbe028c62ac.png",
+    "/lovable-uploads/20a98317-e5ec-421a-8936-40a8db049bef.png",
+    "/lovable-uploads/534d1f26-84f2-4612-9cc1-86b52dcd912f.png",
+    "/lovable-uploads/d7bf6254-a261-493e-8b25-d094f1d2620f.png",
+    "/lovable-uploads/d0c2af03-3d2e-4090-9485-c6717e857423.png",
+    "/lovable-uploads/4b15206a-de28-4f2a-8af6-5716118a7366.png",
+    "/lovable-uploads/e35d2d7f-f836-4de5-b9a0-259f377d3d1f.png",
+    "/lovable-uploads/3c7c2583-e80f-4deb-b439-aa0e1e70e7bf.png",
+  ];
+
   return (
     <section 
       id="clientes" 
@@ -43,25 +61,33 @@ const Clients = () => {
       <div className="container mx-auto">
         <div className="text-center mb-14">
           <h2 className="section-title appear-animation inline-block text-white after:bg-gsx-red mx-auto">Quem Confia em Nosso Trabalho</h2>
-          <p className="section-subtitle appear-animation">Parcerias com as principais empresas do setor</p>
+          <p className="section-subtitle appear-animation">Atendimento especializado para diversas marcas e modelos</p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-center">
-          {Array.from({ length: 8 }).map((_, index) => (
-            <div 
-              key={index}
-              className="appear-animation bg-gray-900 h-28 rounded-lg flex items-center justify-center p-4"
-            >
-              <div className="flex items-center justify-center">
-                <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gsx-red">
-                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                  </svg>
-                </div>
-                <span className="ml-3 font-rajdhani font-bold text-lg">Cliente {index + 1}</span>
-              </div>
-            </div>
-          ))}
+        <div className="appear-animation max-w-5xl mx-auto px-8">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {images.map((image, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square relative overflow-hidden rounded-lg">
+                    <img
+                      src={image}
+                      alt={`Trabalho ${index + 1}`}
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
         </div>
         
         <div className="mt-12 text-center">
