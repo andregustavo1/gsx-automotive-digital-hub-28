@@ -44,8 +44,12 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#inicio" className="text-white font-rajdhani font-bold text-2xl">
-          GSX Diagnósticos
+        <a href="#inicio" className="text-white font-rajdhani font-bold text-2xl flex items-center">
+          <img 
+            src="/lovable-uploads/31659cb8-2ea5-4fb9-b29e-d8f489fb37a9.png" 
+            alt="GSX Diagnósticos Logo" 
+            className="h-10 mr-3"
+          />
         </a>
         
         <nav className="hidden md:flex items-center gap-6">

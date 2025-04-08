@@ -16,7 +16,14 @@ const Footer = () => {
     <footer className="bg-gsx-black text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/31659cb8-2ea5-4fb9-b29e-d8f489fb37a9.png" 
+                alt="GSX Diagnósticos Logo" 
+                className="h-16"
+              />
+            </div>
             <h2 className="text-2xl font-rajdhani font-bold mb-2">GSX Diagnósticos Maringá</h2>
             <p className="text-sm text-gray-400">Diagnóstico e Programação Automotiva Especializada</p>
           </div>
