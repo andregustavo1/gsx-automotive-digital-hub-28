@@ -41,19 +41,19 @@ const Technology = () => {
       name: "Scanner Automotivo Avançado",
       description: "Análise completa de sistemas eletrônicos, compatível com mais de 80 marcas de veículos.",
       features: ["Diagnóstico rápido", "Gráficos em tempo real", "Programação de módulos"],
-      image: "https://images.unsplash.com/photo-1611274294270-84bbf887afd7?q=80&w=1470&auto=format&fit=crop"
+      image: "/lovable-uploads/35f6aa4e-0718-4dd6-bd78-2999187ebf53.png"
     },
     {
-      name: "Equipamento de Calibração ADAS",
-      description: "Calibração precisa de sensores e câmeras para sistemas avançados de assistência ao condutor.",
-      features: ["Alinhamento de câmeras", "Ajuste de sensores de radar", "Configuração de sistema de frenagem"],
-      image: "https://images.unsplash.com/photo-1606577924006-27d39b132ae2?q=80&w=1374&auto=format&fit=crop"
+      name: "Equipamento para Veículos de Luxo",
+      description: "Diagnóstico especializado para veículos de alta performance como Ferrari e outras marcas de luxo.",
+      features: ["Compatibilidade com sistemas exclusivos", "Configuração de performance", "Diagnóstico de sistemas de segurança"],
+      image: "/lovable-uploads/0e015cb9-05a1-42b2-af92-c55cc20a0e17.png"
     },
     {
-      name: "Programador de ECU",
-      description: "Ferramenta para programação e reprogramação de módulos eletrônicos de controle.",
-      features: ["Suporte para múltiplas ECUs", "Programação de imobilizadores", "Atualização de firmware"],
-      image: "https://images.unsplash.com/photo-1563057558-98e9121d371b?q=80&w=1471&auto=format&fit=crop"
+      name: "Scanner para Veículos Populares",
+      description: "Ferramenta para diagnóstico completo de veículos populares como Volkswagen, Ford, Fiat e outros.",
+      features: ["Interface amigável", "Rápida detecção de falhas", "Múltiplos protocolos de comunicação"],
+      image: "/lovable-uploads/9d5b3ce9-cb36-45a7-803f-cdf53582de3d.png"
     }
   ];
 

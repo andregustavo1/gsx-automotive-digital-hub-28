@@ -113,8 +113,8 @@ const AboutUs = () => {
           <div className="appear-animation">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?q=80&w=1470&auto=format&fit=crop" 
-                alt="Técnico GSX realizando diagnóstico automotivo" 
+                src="/lovable-uploads/f8efdfb9-71e4-4aa5-9b5b-a2d34eae3dd1.png" 
+                alt="Módulos automotivos e certificado GSX Diagnósticos" 
                 className="rounded-lg shadow-lg object-cover w-full h-[500px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gsx-black/70 to-transparent rounded-lg"></div>
