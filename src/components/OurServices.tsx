@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 
 const OurServices = () => {
@@ -133,7 +132,7 @@ const OurServices = () => {
               key={index}
               className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-lg transition-all appear-animation"
             >
-              <div className="mb-4">
+              <div className="mb-4 hidden">
                 {service.icon}
               </div>
               <h3 className="font-rajdhani font-bold text-xl mb-2">
