@@ -46,7 +46,7 @@ const Services = () => {
             className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 text-center"
           >
             <div className="flex justify-center mb-4">
-              <div className="w-12 h-12 bg-transparent text-transparent rounded-full flex items-center justify-center text-2xl">
+              <div className="hidden w-12 h-12 rounded-full flex items-center justify-center text-2xl">
                 {service.icon}
               </div>
             </div>
@@ -60,3 +60,4 @@ const Services = () => {
 };
 
 export default Services;
+
